@@ -11,13 +11,9 @@
 #include "rplidar.h"
 
 // https://bucket-download.slamtec.com/6494fd238cf5e0d881f56d914c6d1f355c0f582a/LR001_SLAMTEC_rplidar_protocol_v2.4_en.pdf
-#define MAX_REQ_SZ 259
+
 #define REQ_START UINT8_C(0xA5)
 #define SCAN_PACKET_SZ 5
-
-struct RpLidar {
-    int fd;
-};
 
 static const int a1m1_speed = B115200;
 
